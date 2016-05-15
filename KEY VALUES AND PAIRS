@@ -1,0 +1,58 @@
+//////////////////////////////
+/////// DICTIONARIES /////////
+//////////////////////////////
+//DO NOT PERSERVE ORDER!
+/* 
+    Airport Code           Airport Name
+       (Key)                  (Value)
+    
+        LGA                     La Guardia
+        LHR                     Heathrow
+        CDG                     Charles De Gaulle
+        SDF                     Louisville
+        HKG                     Hong Kong INTL
+        DXB                     Dubai INTL
+ */
+
+var airportCodes: [String: String] = [
+    "LGA": "La Guardia",
+    "LHR": "Heathrow",
+    "CDG": "Charles De Gaulle",
+    "SDF": "Louisville",
+    "HKG": "Hong Kong Intl",
+    "DXB": "Dubai Intl"
+    
+]
+
+//Read from a dictionary
+
+airportCodes ["LGA"]
+"lga" == "LGA"
+
+//Insert Key Value Pairs
+
+airportCodes["SYD"] = "Sydney Airport"
+airportCodes
+airportCodes.updateValue("Dublin Airport", forKey: "DUB")
+
+//Removing Key Value Pairs
+
+airportCodes["DXB"] = nil
+airportCodes.removeValueForKey("DUB")
+
+/////////////////////////////////////
+/// Dealing w/ NON_EXISTANT DATA ////
+/////////////////////////////////////
+
+//let lastItem = todo[5]
+
+let airportName = airportCodes["LGA"]
+
+let orlandoAirport = airportCodes["MCO"]
+
+
+
+
+
+
+
